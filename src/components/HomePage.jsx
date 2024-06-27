@@ -81,22 +81,22 @@ const HomePage = () => {
                                 AGENDA
                             </h2>
                             <ul className="text-md list-disc px-10">
-                                <li className='py-2'>Introduction to Python</li>
-                                <li className='py-2'>What is Python?</li>
-                                <li className='py-2'>Features of Python</li>
-                                <li className='py-2'>Who uses Python?</li>
-                                <li className='py-2'>Starting off with Python Basics</li>
-                                <li className='py-2'>Data Types</li>
-                                <li className='py-2'>Operators</li>
-                                <li className='py-2'>Flow Control</li>
-                                <li className='py-2'>Functions</li>
-                                <li className='py-2'>File Handling</li>
-                                <li className='py-2'>Hands-On</li>
+                                <li className='py-1'>Introduction to Python</li>
+                                <li className='py-1'>What is Python?</li>
+                                <li className='py-1'>Features of Python</li>
+                                <li className='py-1'>Who uses Python?</li>
+                                <li className='py-1'>Starting off with Python Basics</li>
+                                <li className='py-1'>Data Types</li>
+                                <li className='py-1'>Operators</li>
+                                <li className='py-1'>Flow Control</li>
+                                <li className='py-1'>Functions</li>
+                                <li className='py-1'>File Handling</li>
+                                <li className='py-1'>Hands-On</li>
                             </ul>
                         </div>
 
                         <div className='md:w-1/3'>
-                            <h2 className="md:text-3xl text-xl mb-4 flex"><FaBookOpen size={40} className='md:px-0 px-1'/><span className='px-3'> Reserve Your Spot Now!</span></h2>
+                            <h2 className="md:text-3xl text-xl mb-4 flex"><FaBookOpen size={40} className='md:px-0 px-1' /><span className='px-3'> Reserve Your Spot Now!</span></h2>
                             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 bg-gray-100 p-6 rounded-md shadow-md">
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email *</label>
@@ -125,9 +125,22 @@ const HomePage = () => {
                                         <input id="updates" type="checkbox" {...register('updates')} className="mr-2" />
                                         Check here to receive further updates
                                     </label>
-                                </div> 
+                                </div>
                                 <button type="submit" className="w-full bg-sky-800 text-white p-2 rounded-md">Submit</button>
                             </form>
+                        </div>
+                    </div>
+
+                    <div className="main-bottom md:px-20 flex flex-col md:flex-row items-center">
+                        <div className='md:pb-10 m-4'>
+                            <h2 className="text-xl font text-sky-800 m-4">
+                                Webinar Facts
+                            </h2>
+                            <ul className="text-sm md:px-14 px-8 list-disc border-2 border-dashed p-2">
+                                <li className='py-1'>Python has celebrated its 30th anniversary in 2021</li>
+                                <li className='py-1'>Python is the preferred language for new technologies such as Data Science and Machine Learning.</li>
+                                <li className='py-1'>TIOBE index says,'Python is one of the most popular programming languages in the world'</li>
+                            </ul>
                         </div>
                     </div>
 
